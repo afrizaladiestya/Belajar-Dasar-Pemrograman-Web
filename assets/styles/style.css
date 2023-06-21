@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400&family=Quicksand:wght@500;700&family=Tilt+Neon&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: Oxanium;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header.navbar-container {
+    max-width: 1800px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+    box-shadow: 0px 1px 5px #303841;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #303841;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+    
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #D72323;
+    color: white
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .homepage {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+main .homepage .homepage-description {
+    flex:2;
+}
+
+main .homepage .homepage-description .title {
+    font-size: 3rem;
+    margin-block: 1rem;
+}
+
+main .homepage .homepage-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+main .homepage .homepage-image {
+    flex: 1;
+    display: flex
+    
+}
+
+main .homepage .homepage-image img {
+    margin: auto;
+    min-width: 150px;
+    width: 300px;
+    
+}
+#belajar {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.Gallery{
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex-flow: column nowrap;
+    width: fit-content;
+}
+
+main aside {
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+main aside .profile {
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: center;
+}
+
+main aside .profile img {
+    flex: 1;
+    display: flex;
+    width: 300px;
+}
+
+main aside .profile section h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #D72323;
+}
+
+main aside .profile section table {
+    text-align: left;
+    padding-left: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main aside .profile section table th {
+    padding-right: 20px;
+}
+
+main aside .profile section table th, td {
+    padding-bottom: 5px;
+}
+
+
+.card .img {
+    max-width: 10px;
+    float: left;
+}
+
+footer {
+    font-family:'Segoe UI';
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #D72323;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    main .homepage {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .homepage .homepage-description .title {
+        font-size: 3rem;
+    }
+
+    main .homepage .homepage-description p {
+        font-size: 1rem;
+    }
+
+    main .homepage .homepage-image {
+        order: -1;
+    }
+
+    main aside .profile {
+        flex-direction: column;
+    }
+
+    main .study-room {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
